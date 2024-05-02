@@ -1,15 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
+  standalone: true,
   selector: 'app-control-flow',
   templateUrl: './control-flow.component.html',
-  styleUrls: ['./control-flow.component.css']
+  styleUrls: ['./control-flow.component.css'],
 })
-export class ControlFlowComponent implements OnInit {
+export default class ControlFlowComponent {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }
