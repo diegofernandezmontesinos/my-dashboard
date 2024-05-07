@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 @Component({
   standalone: true,
@@ -7,7 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./control-flow.component.css'],
 })
 export default class ControlFlowComponent {
-  constructor() {}
+  public showContent = signal(false);
 
-  ngOnInit() {}
+  public toggleContent() {
+    this.showContent.update(value => !value);
+  }
 }
