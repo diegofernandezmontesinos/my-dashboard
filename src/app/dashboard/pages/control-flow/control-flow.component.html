@@ -1,3 +1,5 @@
+<app-title title="Control flow" withShadow="!true" />
+
 <section class="grid grid-cols-1 md:grid-cols-2 gap-3">
   <div class="bg-white rounded shadow p-10">
     <h2 class="text-2xl font-bold mb-5">if: {{ showContent() }}</h2>
@@ -36,7 +38,7 @@
       @for (framework of frameworks2(); track $index) {
       <li>{{ framework }}</li>
       } @empty {
-        <li> No hay frameworks agregados </li>
+      <li>No hay frameworks agregados</li>
       }
     </ul>
   </div>
